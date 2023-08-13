@@ -1,0 +1,104 @@
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--hue: 223;
+	--white: hsl(var(--hue),10%,100%);
+	--gray1: hsl(var(--hue),10%,90%);
+	--gray2: hsl(var(--hue),10%,80%);
+	--gray7: hsl(var(--hue),10%,30%);
+	--gray9: hsl(var(--hue),10%,10%);
+}
+html{
+    font-size: 62.5%;
+}
+body {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+/* Main styles */
+.gr-glow {
+	--gradient: linear-gradient(90deg,hsl(3,90%,55%),hsl(63,90%,55%) 6rem,hsl(123,90%,55%) 12rem);
+	--percent: 50%;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin: 0.5rem 0;
+	width: 12rem;
+	height: 1.5rem;
+}
+.gr-input {
+	background: var(--gray7) var(--gradient) no-repeat;
+	background-size: var(--percent) 100%;
+	border-radius: 0.375rem;
+	width: inherit;
+	height: 0.75rem;
+	-webkit-appearance: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.gr-input:focus {
+	outline: transparent;
+}
+/* WebKit */
+.gr-input::-webkit-slider-thumb {
+	background-color: var(--white);
+	border: 0;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.0625rem var(--gray2) inset;
+	width: 1.5rem;
+	height: 1.5rem;
+	transition: background-color 0.15s linear;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.gr-input:focus::-webkit-slider-thumb,
+.gr-input::-webkit-slider-thumb:hover {
+	background-color: var(--gray1);
+}
+/* Firefox */
+.gr-input::-moz-range-thumb {
+	background-color: var(--white);
+	border: 0;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.0625rem var(--gray2) inset;
+	width: 1.5rem;
+	height: 1.5rem;
+	transition: background-color 0.15s linear;
+}
+.gr-input:focus::-moz-range-thumb,
+.gr-input::-moz-range-thumb:hover {
+	background-color: var(--gray1);
+}
+
+/* Accessibility */
+.sr {
+	clip: rect(1px,1px,1px,1px);
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+}
+
+/* `:focus-visible` support */
+@supports selector(:focus-visible) {
+	.gr-input:focus::-webkit-slider-thumb {
+		background-color: var(--white);
+	}
+	.gr-input:focus-visible::-webkit-slider-thumb,
+	.gr-input::-webkit-slider-thumb:hover {
+		background-color: var(--gray1);
+	}
+	.gr-input:focus::-moz-range-thumb {
+		background-color: var(--white);
+	}
+	.gr-input:focus-visible::-moz-range-thumb,
+	.gr-input::-moz-range-thumb:hover {
+		background-color: var(--gray1);
+	}
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <div id="section-7">
+    <div id="section7-address">
+        <div class="right">
+            <p class="title">Contact Us</p>
+            <h3 class="heading">Address Information</h3>
+            <p class="description">Overeating is one of the most common causes of overweight and digestive problems.</p>
+          <div>
+            <!-- <h4 class="left-heading">London Store</h4>
+            <p class="left-lines">
+                Roeterseiland Campus Building E<br>6th floor London<br>Monday to Friday : 9am to 8pm<br>examplemail.mail.com</p> -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/WhatsApp Image 2023-08-11 at 10.09.01.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                      <img src="images/WhatsApp Image 2023-08-11 at 10.08.26.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                      <img src="images/WhatsApp Image 2023-08-11 at 10.11.06.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <!-- <div class="carousel-item">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="..." class="d-block w-100" alt="...">
+                    </div> -->
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            <h4 class="left-heading">Berlin Store</h4>
+            <p class="left-lines">
+                Roeterseiland Campus Building E<br>6th floor London<br>Monday to Friday : 9am to 8pm<br>examplemail.mail.com</p>
+        </div>
+        <div class="left">
+          <h3 class="heading">Get In Touch</h3>
+            <p class="title" style="color: rgb(10, 148, 33);">Investment Guide</p>
+           
+            <p class="description" style="color: black;">An authoritative investment guide designed to illuminate a spectrum of opportunities, illuminating potential returns, assessing risks, and unveiling tax implications, empowering astute financial choices</p>
+         
+            <form action="/" method="post">
+                <input class="input-box" type="text" name="name" placeholder="Name" />
+                <input class="input-box" type="text" name="Amount" style="width: 50%;" placeholder="Amount" />
+                <input class="input-box" type="text" name="Time" style="width: 50%;" placeholder="Time Period"  />
+                <!-- <h3>Return Rate</h3>
+                <input class="input-box" type="range" name="Range" placeholder="Range 1-5" />  -->
+                <h3>Risk Level</h3>
+                <input class="input-box" type="range" name="safety" value="5" min="0" max="5"/>
+                <!-- <h3>Ease of Mangement</h3>
+                <input class="input-box" type="range" name="Range" placeholder="Range 1-5" /> -->
+
+                <!-- <input class="input-box" type="email" name="email" placeholder="E-mail" />
+                <textarea class="input-box">Message</textarea> -->
+                <input id="btn-1" type="submit" value="Submit Now">
+            </form>
+            <% if (locals.data){ %>
+              <h2><%=locals.data%></h2> 
+          <%}%>
+          <script src="/js/index.js"></script>    
+          </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
